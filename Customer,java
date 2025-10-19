@@ -3,26 +3,22 @@ public class Customer {
     private int points;
     private static int totalCustomers = 0;
 
-   
     public Customer() {
         this.name = "Unknown";
         this.points = 0;
         totalCustomers++;
     }
 
-    
     public Customer(String name, int points) {
         this.name = name;
         this.points = points;
         totalCustomers++;
     }
-
    
     public void addPoints(int earnedPoints) {
         this.points += earnedPoints;
         System.out.println(name + " earned " + earnedPoints + " points.");
     }
-
    
     public void redeemReward() {
         if (points >= 100) {
@@ -33,17 +29,14 @@ public class Customer {
         }
     }
 
-   
     public void displayCustomerInfo() {
         System.out.println("Name: " + name + ", Points: " + points);
     }
 
-   
     public static void displayTotalCustomers() {
         System.out.println("Total No. of Customers: " + totalCustomers);
     }
 
-   
     public static void getAllowedRewardsRedemption(Customer c) {
         int allowed = c.points / 100;
         System.out.println(c.name + " can redeem " + allowed + " reward(s).");
