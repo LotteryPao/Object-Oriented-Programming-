@@ -1,3 +1,5 @@
+// file. CoffeeShop.java
+
 public class Customer {
     private String name;
     private int points;
