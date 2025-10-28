@@ -2,7 +2,8 @@ package SmartHomeLabExam;
 
 // main program: SmartHomeMain.java
 
-// Base class Device
+// Contains the Base class Device
+
 class Device {
     // Attributes
     protected String deviceName;
