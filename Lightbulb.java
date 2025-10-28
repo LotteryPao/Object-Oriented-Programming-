@@ -2,7 +2,8 @@ package SmartHomeLabExam;
 
 // Main program: SmartHomeMain.java
 
-// Subclass LightBulb
+// Contains the Subclass LightBulb
+
 class LightBulb extends Device {
     private int brightnessLevel; // 0 to 100
     private String color;
