@@ -1,3 +1,5 @@
+package SmartHomeLabExam;
+
 // Main program: SmartHomeMain.java
 
 // Subclass Thermostat
