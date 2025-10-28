@@ -29,7 +29,7 @@ public class SmartHomeMain {
         // Turn all devices ON
         controller.turnAllOn();
 
-        // Display info again after turning ON
+        // To display info again when turning ON
         System.out.println("After turning all devices ON:");
         for (Device device : devices) {
             device.displayInfo();
