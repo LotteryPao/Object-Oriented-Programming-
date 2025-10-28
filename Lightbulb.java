@@ -29,8 +29,7 @@ class LightBulb extends Device {
             System.out.println("Invalid brightness level. Must be between 0 and 100.");
         }
     }
-
-    // Override displayInfo method
+  
     @Override
     public void displayInfo() {
         super.displayInfo();
