@@ -1,4 +1,6 @@
-// Main program: SmartHomeMain.java
+package SmartHomeLabExam;
+
+// main program: SmartHomeMain.java
 
 // Base class Device
 class Device {
@@ -7,10 +9,10 @@ class Device {
     protected String status; // only accepts "ON" or "OFF"
     protected String location;
 
-   
+    //  To count total devices created
     protected static int deviceCount = 0;
 
-    
+    // Default constructor
     public Device() {
         this.deviceName = "Unknown Device";
         this.status = "OFF";
@@ -18,7 +20,7 @@ class Device {
         deviceCount++;
     }
 
-    
+    // Parameterized constructor to set all attributes
     public Device(String deviceName, String status, String location) {
         this.deviceName = deviceName;
         if (status.equals("ON") || status.equals("OFF"))
@@ -29,7 +31,7 @@ class Device {
         deviceCount++;
     }
 
-   
+    // Methods
     public void turnOn() {
         this.status = "ON";
     }
@@ -44,7 +46,7 @@ class Device {
         System.out.println("Location: " + location);
     }
 
-    
+    // To show total device count
     public static void showDeviceCount() {
         System.out.println("Total devices created: " + deviceCount);
     }
