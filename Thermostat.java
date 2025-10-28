@@ -2,7 +2,7 @@ package SmartHomeLabExam;
 
 // Main program: SmartHomeMain.java
 
-// Subclass Thermostat
+// Contains the Subclass Thermostat
 class Thermostat extends Device {
     private double temperature; // in Celsius
     private String mode; // cooling or heating
